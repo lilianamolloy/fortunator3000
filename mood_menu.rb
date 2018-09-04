@@ -1,6 +1,7 @@
-mood_selection = 1
+def mood_menu
+    mood_selection = 1
 
-while mood_selection != 4
+    while mood_selection != 4
     puts "Select your mood" 
     
     print """
@@ -12,22 +13,22 @@ while mood_selection != 4
     Select option:
     """
    
-   mood_selection = gets.strip.to_i
+    mood_selection = gets.strip.to_i
 
-    case mood_selection
-    when 1
-        array = ["hello", "goodbye", "lili", "fiona"]
-        new_array = array.sample
-        puts new_array
-    when 2
-        array = ["hello", "goodbye", "lili", "fiona"]
-        new_array = array.sample
-        puts new_array
-    when 3
-        array = ["hello", "goodbye", "lili", "fiona"]
-        new_array = array.sample
-        puts new_array
+        case mood_selection
+        when 1
+            selected_fortune = random_fortune make_me_laugh
+        when 2
+            selected_fortune = random_fortune pick_me_up
+        when 3
+            selected_fortune = random_fortune dark_humour
+        end
+
     end
-
-
 end
+
+def random_fortune array
+    fortune = array.sample
+    return fortune
+end
+
