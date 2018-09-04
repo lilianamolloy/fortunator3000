@@ -1,8 +1,9 @@
-def fortune_options
+def fortune_options fortune
     
         fortune_selection = 1
     
         while fortune_selection != 3
+        puts "#{fortune}" #fortune cookie 
         puts "What would you like to do with your fortune?" 
         
         print """
@@ -16,6 +17,7 @@ def fortune_options
         fortune_selection = gets.strip.to_i
         end
 
+        case fortune_selection
         when 1
             puts # tweet gem
             #ask for info
