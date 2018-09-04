@@ -18,7 +18,6 @@ def fortune_options
 
         when 1
             puts # tweet gem
-            
             #ask for info
         when 2
             puts # email gem
