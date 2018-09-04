@@ -20,17 +20,17 @@ def mood_menu fortunes
 
         case mood_selection
         when 1
-            selected_fortune = random_fortune fortunes[:make_me_laugh]
-            fortune_options selected_fortune
+            selected_fortune = random_fortune(fortunes[:make_me_laugh])
+            fortune_options(selected_fortune)
         when 2
-            selected_fortune = random_fortune fortunes[:pick_me_up]
-            fortune_options selected_fortune
+            selected_fortune = random_fortune(fortunes[:pick_me_up])
+            fortune_options(selected_fortune)
         when 3
-            selected_fortune = random_fortune fortunes[:dark_humour]
-            fortune_options selected_fortune
+            selected_fortune = random_fortune(fortunes[:dark_humour])
+            fortune_options(selected_fortune)
         when 4
-            selected_fortune = random_fortune fortunes[:insightful]
-            fortune_options selected_fortune
+            selected_fortune = random_fortune(fortunes[:insightful])
+            fortune_options(selected_fortune)
         else
         end
 
