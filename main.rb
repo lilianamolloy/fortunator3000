@@ -10,7 +10,7 @@ fortunes = CSV.read('fortunes.csv')
 
 menu_selection = 1
 
-while menu_selection != 4
+while menu_selection != 5
 
     rows = [
         [1, 'A fortune cookie for you'.colorize(:blue)],

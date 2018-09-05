@@ -5,13 +5,13 @@ def create_account fortune
 
     users = CSV.read("users.csv")
 
-    puts "CREATE ACCOUNT"
+    puts "CREATE ACCOUNT".colorize(:green)
 
     puts "enter username".colorize(:blue)
-    username = gets.strip
+    username = gets.strip.downcase
 
     puts "enter password".colorize(:blue)
-    password = gets.strip
+    password = gets.strip.downcase
 
     if fortune != ''
 
@@ -19,7 +19,7 @@ def create_account fortune
 
         users.each do |user|
             if username == user[0]
-                puts "Username not available"
+                puts "Username not available".colorize(:green)
                 break
             else
                 CSV.open("users.csv", "w") do |csv|
@@ -39,7 +39,7 @@ def create_account fortune
 
         users.each do |user|
             if username == user[0]
-                puts "Username unavailable"
+                puts "Username unavailable".colorize(:green)
                 break
             else 
                 CSV.open("users.csv", "w") do |csv|

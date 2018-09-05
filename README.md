@@ -1,4 +1,5 @@
 # Link to Github repository: 
+https://github.com/lilianamolloy/fortunator3000
 
 # Purpose: 
 To display expertise within the terminal (CLI) by writing a compelling and entertaining application.    
@@ -15,9 +16,22 @@ The Fortunator3000 app provides the user with a daily fortune to brighten or enl
 # Instructions for use:
 - Prior to use, the following ruby gems are required for the app to run:
     - Pony (for email funtionality)
+  ```ruby
+  $ gem install pony
+  ```
     - Colorize
+  ```ruby
+  $ gem install colorize
+  ```
     - Terminal Table
+  ```ruby
+  $ gem install terminal-table
+  ```
 
+- Run main.rb
+  ```ruby
+  $ ruby main.rb
+  ```
 - At the main menu, use number selection (i.e. 1) to choose the type of fortune you would like to receive.
 - If fortune is selected for yourself, once viewed you have the option to email it or save it in your own personal account (option to create account if one not already existing).
 - If fortune is selected for a friend, you do not have the opportunity to view their fortune but rather email it directly to your friend.
